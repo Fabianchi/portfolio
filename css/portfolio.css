@@ -1,3 +1,18 @@
-body{
+html{
 
+}
+
+
+body{
+	background-color: #001d3a !important;
+	z-index: -10 !important;
+}
+/*Particles js style*/
+#particles-js {
+    height: 100% !important;
+    width: 100% !important;
+    position: fixed !important;
+    top: 0px !important;
+    left: 0px !important;
+    z-index: -1 !important;
 }
