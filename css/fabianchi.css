@@ -55,6 +55,9 @@ body{
 .deep-blue{
 	color: #001d3a !important;
 }
+.bg-deep-blue{
+	background-color: #001d3a !important;
+}
 .link{
 	font-size: 16px;
 	font-weight: bold;
