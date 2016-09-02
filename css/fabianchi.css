@@ -1,0 +1,71 @@
+/*Importando tipografía Ride My Bike*/
+@font-face{
+   font-family: "Ride";
+   src: url(../fonts/ride.otf);
+   format:(ttf);
+   font-style: normal;
+   font-weight: normal;}
+/*Importanto tipografía Romeo Essentials*/
+@font-face{
+   font-family: "Romeo";
+   src: url(../fonts/romeo.otf);
+   format:(ttf);
+   font-style: normal;
+   font-weight: normal;}
+
+
+/*Particles js style*/
+#particles-js {
+    height: 100% !important;
+    width: 100% !important;
+    position: fixed !important;
+    top: 0px !important;
+    left: 0px !important;
+    z-index: -10 !important;
+}
+
+
+body{
+	background-color: #001d3a !important;
+	/*z-index: -1!important;*/
+}
+
+
+#S0{
+	padding: 100px 0;
+}
+.carousel{
+	background-color: transparent;
+	height: 400px !important;
+}
+.carousel p{
+	font-size: 18px !important;
+}
+
+.h1{
+	font-family: 'Ride' !important;
+	font-size: 5.2rem !important;
+    margin: 2.1rem 0 1.68rem 0;
+}
+.h2{
+	font-family: 'Romeo' !important;
+	font-size: 3.7rem !important;
+	font-weight: bold;
+}
+.deep-blue{
+	color: #001d3a !important;
+}
+.link{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#S1{
+	padding: 20px 0;
+}
+#S1 p{
+	font-size: 20px;
+}
+#S1 blockquote{
+	border-left-color: #B71C1C !important;
+}
