@@ -44,12 +44,12 @@ body{
 
 .h1{
 	font-family: 'Ride' !important;
-	font-size: 5.2rem !important;
+	font-size: 5.6rem !important;
     margin: 2.1rem 0 1.68rem 0;
 }
 .h2{
 	font-family: 'Romeo' !important;
-	font-size: 3.7rem !important;
+	font-size: 3.5rem !important;
 	font-weight: bold;
 }
 .deep-blue{
@@ -66,9 +66,13 @@ body{
 #S1{
 	padding: 20px 0;
 }
+#S1 .container{
+	width: 80% !important;
+}
 #S1 p{
-	font-size: 20px;
+	font-size: 18px
 }
 #S1 blockquote{
-	border-left-color: #B71C1C !important;
+	border-left-color: #00695c !important;
+	font-size: 22px;
 }
