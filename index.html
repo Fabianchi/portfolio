@@ -10,138 +10,176 @@
   <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
   <!--Importing materialize.css local-->
   <link rel="stylesheet" href="css/materialize.min.css" media="screen,projection">
-  <!--Importing materialize.css CDN-->
-  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">-->
+  <!--Importing fullpage.css-->
+  <!--<link rel="stylesheet" href="css/jquery.fullPage.css" />-->
 </head>
 <body>
-  <div id="particles-js"></div>
+  <div id="fullpage">
+    <div id="particles-js" class="section"></div>
 
-  <!--Nav-->
-  <!--Nav structure-->
-  <div class="nav-fixed">
-    <nav>
-      <div class="nav-wrapper red darken-4">
-          <!--<a href="#!" class="brand-logo">Logo</a>-->
-          <ul class="right hide-on-med-and-down">
-            <li><a href="#!">Inicio</a></li>
-            <li><a href="#!">Acerca de mi</a></li>
-            <li><a href="#!">Habilidades</a></li>
-            <li><a href="#!">Estadisticas</a></li>
-            <li>
-              <a href="#!" class="dropdown-button" data-activates="ddMywork">Trabajo<i class="material-icons right">menu</i></a>
-              <!--Dropdown-->
-              <ul id="ddMywork" class="dropdown-content">
-                <li><a href="#!">Portafolio</a></li>
-                <li class="divider"></li>
-                <li><a href="#!">Mi Tarjeta</a></li>
-                <li class="divider"></li>
-                <li><a href="#!">Repositorio</a></li>
-                <li class="divider"></li>
-                <li><a href="#!">Mi CV</a></li>
-              </ul>
-            </li>
-            <li><a href="#!">Equipo</a></li>
-            <li><a href="#!">Contacto</a></li>      
-            <li><a href="#!" class="btn waves-effect waves-light teal darken-1">Registrarse</a></li>    
-          </ul>
-      </div>
-    </nav>
-  </div>
-
-  <!--Landing-->
-  <div id="S0" class="row">
-    <div class="container">
-        <div class="carousel carousel-slider" data-indicators="true">
-          <!--Boton del slider-->
-          <div class="carousel-fixed-item center">
-            <a href="#!" class="btn-large waves-effect teal darken-1"><i class="material-icons left">play_circle_filled</i>¡Iniciar ya!</a>
-          </div>
-          <!--Elemento del slider-->
-          <div class="carousel-item white-text center-align" href="#one!">
-            <h1 class="h1">Bienvenido a mi sitio web</h1>
-            <p>Aquí podrás saber más acerca de mi, qué es lo que hago y cómo lo hago</p>
-          </div>
-          <!--Elemento del slider-->
-          <div class="carousel-item white-text left-align" href="#two!">
-            <h1 class="h1">Hablemos, hagamos negocios</h1>
-            <p>¿Estas interesado en tener tu propia página web?, Contáctame y encontremos juntos una solución a tu necesidad</p>
-          </div>
-          <!--Elemento del slider-->
-          <div class="carousel-item white-text right-align" href="#three!">
-            <h1 class="h1">Recorre y explora</h1>
-            <p>Accede a mi portafolio y hecha un vistazo a mis diseños y trabajos</p>
-          </div>
-          <!--Elemento del slider-->
-          <div class="carousel-item white-text center-align" href="#four!">
-            <img src="img/owenslider.png" alt="Logo">
-          </div>
+    <!--Nav-->
+    <!--Nav structure-->
+    <div class="navba-fixed" class="section">
+      <nav>
+        <div class="nav-wrapper red darken-4">
+            <!--<a href="#!" class="brand-logo">Logo</a>-->
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#!">Inicio<i class="material-icons left">home</i></a></li>
+              <li><a href="#!">Acerca de mi<i class="material-icons left">person</i></a></li>
+              <li><a href="#!">Estadisticas<i class="material-icons left">sort</i></a></li>
+              <li><a href="#!">Habilidades<i class="material-icons left">business_center</i></a></li>
+              <li>
+                <a href="#!" class="dropdown-button" data-activates="ddMywork">Trabajo y más<i class="material-icons left">menu</i></a>
+                <!--Dropdown-->
+                <ul id="ddMywork" class="dropdown-content">
+                  <li><a href="#!">Portafolio<i class="material-icons left">work</i></a></li>
+                  <li class="divider"></li>
+                  <li><a href="#!">Mi Tarjeta<i class="material-icons left">chrome_reader_mode</i></a></li>
+                  <li class="divider"></li>
+                  <li><a href="#!">Repositorio<i class="material-icons left">storage</i></a></li>
+                  <li class="divider"></li>
+                  <li><a href="#!">Mi CV<i class="material-icons left">attach_file</i></a></li>
+                </ul>
+              </li>
+              <li><a href="#!">Equipo<i class="material-icons left">supervisor_account</i></a></li>
+              <li><a href="#!">Contacto<i class="material-icons left">comment</i></a></li>      
+              <li><a href="#!" class="btn waves-effect waves-light teal darken-1">Registrarse</a></li>    
+            </ul>
         </div>
+      </nav>
     </div>
-  </div>
 
-  <!--About me-->
-  <div id="S1" class="row grey lighten-5">
-    <div class="row col s12">
+    <!--Landing-->
+    <div id="S0" class="row section">
       <div class="container">
-        <h1 class="h1 center">Acerca de mi</h1>
-        <div class="col s4">
-          <h2 class="h2 deep-blue">Fabian Alfonso Chi</h2>
-          <p class="link teal-text text-darken-3">Diseñador y desarrollador web</p>
-          <div class="col s9">
-            <img src="img/pefil.jpg" alt="" class="responsive-img center">
-          </div>      
-        </div>
-        <div class="col s8">
-          <p>
-            Hola, mi nombre es Fabian Alfonso Chi; soy Ingeniero en Tecnologías de la información y un gran apasionado del desarrollo web y diseño digital, otra cosa que amo es la naturaleza y los animales, me gusta cuidar de dos tortugas y un perrito, siempre que puedo me doy un poco de tiempo para viajar y conocer nuevos lugares, relajarme y dar paso a nuevas ideas y proyectos.
-          </p>
-          <p>
-            Me encanta el trabajo por las noches, hay menos ruido, calor y luz; no existe otra cosa maravillosa como el trabajo por las noches con música chill-out/Lounge y una gran taza de capuchino con vainilla, ah y no olvides ajustar las luces bajas. Podría decir que ese es mi secreto para aumentar mi concentración, enfoque y creatividad.
-          </p>
-          <blockquote>
-              "Un hombre puede ser derrotado, pero jamás destruido" <cite>Ernest Heminway</cite>
-          </blockquote>
-        </div>
-        <h2 class="h2 deep-blue right">Mascota</h2>
+          <div class="carousel carousel-slider" data-indicators="true">
+            <!--Boton del slider-->
+            <div class="carousel-fixed-item center">
+              <a href="#!" class="btn-large waves-effect teal darken-1"><i class="material-icons left">play_circle_filled</i>¡Iniciar ya!</a>
+            </div>
+            <!--Elemento del slider-->
+            <div class="carousel-item white-text center-align" href="#four!">
+              <img src="img/owenslider.png" alt="Logo">
+            </div>
+            <!--Elemento del slider-->
+            <div class="carousel-item white-text center-align" href="#one!">
+              <h1 class="h1">Bienvenido a mi sitio web</h1>
+              <p>Aquí podrás saber más acerca de mi, qué es lo que hago y cómo lo hago</p>
+            </div>
+            <!--Elemento del slider-->
+            <div class="carousel-item white-text left-align" href="#two!">
+              <h1 class="h1">Hablemos, hagamos negocios</h1>
+              <p>¿Estas interesado en tener tu propia página web?, Contáctame y charlemos</p>
+            </div>
+            <!--Elemento del slider-->
+            <div class="carousel-item white-text right-align" href="#three!">
+              <h1 class="h1">Recorre y explora</h1>
+              <p>Accede a mi portafolio y hecha un vistazo a mis diseños y trabajos</p>
+            </div>
+          </div>
       </div>
     </div>
 
-    <div class="row col s12">
+    <!--About me-->
+    <div id="S1" class="S1 row grey lighten-5 section">
+      <div class="row col s12">
+        <div class=" row container">
+          <h1 class="h1 center">Acerca de mi</h1>
+          <div class="col s12 m4">
+            <h2 class="h2 deep-blue">Fabian Alfonso Chi</h2>
+            <p class="link teal-text text-darken-3">Diseñador y desarrollador web</p>
+            <div class="col s9 center">
+              <img src="img/pefil.jpg" alt="" class="responsive-img center">
+            </div>      
+          </div>
+          <div class="col s12 m8">
+            <p>
+              Hola, mi nombre es Fabian Alfonso Chi; soy Ingeniero en Tecnologías de la información y un gran apasionado del desarrollo web, diseño digital interactivo y UX, otra cosa que amo es la naturaleza y los animales, siempre que puedo me doy un poco de tiempo para viajar y conocer nuevos lugares, relajarme y dar paso a nuevas ideas y proyectos.
+            </p>
+            <p>
+              Me encanta el trabajo por las noches, hay menos ruido, calor y luz; no existe otra cosa maravillosa como el trabajo por las noches con música chill-out/Lounge y una gran taza de capuchino con vainilla. Podría decir que ese es mi secreto para aumentar mi concentración, enfoque y creatividad.
+            </p>
+            <blockquote>
+                "Un hombre puede ser derrotado, pero jamás destruido" <cite>Ernest Hemingway</cite>
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="row container">
+          <p>Código de trabajo</p>
+          <div class="divider"></div>
+          <br>
+          <div class="chip white-text bg-deep-blue">Creatividad<i class="material-icons right">done</i></div>
+          <div class="chip white-text teal darken-3">Innovación<i class="material-icons right">done</i></div>
+          <div class="chip white-text red darken-4">Responsabilidad<i class="material-icons right">done</i></div>
+          <div class="chip white-text bg-deep-blue">Compromiso<i class="material-icons right">done</i></div>
+          <div class="chip white-text teal darken-3">Trabajo conjunto<i class="material-icons right">done</i></div>
+          <div class="chip white-text red darken-4">Calidad<i class="material-icons right">done</i></div>
+        </div>
+      </div>
+    </div>
+      <!--<div class="row col s12">
+        <div class="container">
+          <div class="col s8">
+            <p>
+              Owen es mi imagen personal, podría decir que es un logo, pero en realidad eh adoptado al búho como mi emblema ya que es un animal nocturno y representa la sabiduría y el aprendizaje en muchas culturas. Uno de mis objetivos es ser CEO de mi propio grupo de desarrollo, ya sea por trabajo o para formar una comunidad entre desarrolladores, donde compartir conocimientos, tecnologías y hacer de owen nuestra mascota.
+            </p>
+          </div>
+          <div class="col s4 right">
+            <img src="img/owen.png" alt="Owen" class="responsive-img">
+          </div>
+        </div>
+      </div>-->
+
+    <!--Estadisticas-->
+    <div id="S2" class="S2 row center white-text">
       <div class="container">
-        <div class="col s8">
-          <p>
-            Owen es mi imagen personal, podría decir que es un logo, pero en realidad eh adoptado al búho como mi emblema ya que es un animal nocturno y representa la sabiduría y el aprendizaje en muchas culturas. Uno de mis objetivos es ser CEO de mi propio grupo de desarrollo, ya sea por trabajo o para formar una comunidad entre desarrolladores, donde compartir conocimientos, tecnologías y hacer de owen nuestra mascota.
-          </p>
+        <h1 class="h1">Estadísticas</h1>
+        <p>
+          Cada proyecto es único, desarrollarlo de manera correcta es tomar en cuenta al cliente en todo momento y regirse por sólidos valores y ética profesional, para cada cliente hago lo mejor que puedo hasta estar ambos satisfechos. Los números son importantes en la programación, aquí podrás apreciar unos muy importantes.
+        </p>
+        <br>
+        <br>  
+        <div class="col s12 m3">
+          <i class="large material-icons grey-text text-lighten-3">computer</i>
+          <h3 id="proyectos">0</h3>
+          <h5 class="light center">Proyectos terminados</h5>
         </div>
-        <div class="col s4 right">
-          <img src="img/owen.png" alt="Owen" class="responsive-img">
+        <div class="col s12 m3">
+            <i class="large material-icons grey-text text-lighten-3">access_time</i>
+            <h3 id="horas">0</h3>
+            <h5 class="light center">Horas programando</h5>
+        </div>
+        <div class="col s12 m3">
+            <i class="large material-icons grey-text text-lighten-3">code</i>
+            <h3 id="codigo">0</h3>
+            <h5 class="light center">Líneas de código</h5>
+        </div>
+        <div class="col s12 m3">
+            <i class="large material-icons grey-text text-lighten-3">work</i>
+            <h3 id="años">0</h3>
+            <h5 class="light center">Años de experiencia</h5>
         </div>
       </div>
     </div>
 
-    <div class="row container">
-      <p class="light">Código de trabajo</p>
-      <div class="divider"></div>
-      <br>
-      <div class="chip white-text bg-deep-blue">Creatividad<i class="material-icons right">done</i></div>
-      <div class="chip white-text teal darken-3">Innovación<i class="material-icons right">done</i></div>
-      <div class="chip white-text red darken-4">Responsabilidad<i class="material-icons right">done</i></div>
-      <div class="chip white-text bg-deep-blue">Compromiso<i class="material-icons right">done</i></div>
-      <div class="chip white-text teal darken-3">Trabajo conjunto<i class="material-icons right">done</i></div>
-      <div class="chip white-text red darken-4">Calidad<i class="material-icons right">done</i></div>
-    </div>
-  </div>
 
+
+  </div>
 </body>
 <!--Import jQuery before materialize.js-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<!--Importing js local javascript-->
-<script type="text/javascript" src="js/fabianchi.js"></script>
 <!--Importing particles.js-->
 <script type="text/javascript" src="js/particles.min.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
 <!--Importing materialize js local-->
 <script type="text/javascript" src="js/materialize.min.js"></script>
+<!--Importing countup js-->
+<script type="text/javascript" src="js/countUp.js"></script>
+<!--Importing js local javascript-->
+<script type="text/javascript" src="js/fabianchi.js"></script>
+<!--Importing fullpage.js Local-->
+<!--<script type="text/javascript" src="js/jquery.fullPage.js"></script>-->
 <!--Importing materialize.css js CND-->
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>-->
 </html>
@@ -179,3 +217,12 @@
           </div>
         </div>
 -->
+
+
+
+<!--Estadisticas-->
+    <!--<div class="parallax-container">
+      <div class="parallax"><img src="img/parallaxcode.png" alt="Codding">
+    
+      </div>  
+    </div>-->
