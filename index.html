@@ -11,7 +11,9 @@
   <!--Importing materialize.css local-->
   <link rel="stylesheet" href="css/materialize.min.css" media="screen,projection">
   <!--Importing fullpage.css-->
-  <!--<link rel="stylesheet" href="css/jquery.fullPage.css" />-->
+  <link rel="stylesheet" href="css/jquery.fullPage.css" />
+  <!--Importing Animations.css -->
+  <link rel="stylesheet" href="css/animations.css">
 </head>
 <body>
   <div id="fullpage">
@@ -21,12 +23,12 @@
     <!--Nav structure-->
     <div class="navba-fixed" class="section">
       <nav>
-        <div class="nav-wrapper red darken-4">
+        <div class="nav-wrapper red darken-2">
             <!--<a href="#!" class="brand-logo">Logo</a>-->
             <ul class="right hide-on-med-and-down">
               <li><a href="#!">Inicio<i class="material-icons left">home</i></a></li>
               <li><a href="#!">Acerca de mi<i class="material-icons left">person</i></a></li>
-              <li><a href="#!">Estadisticas<i class="material-icons left">sort</i></a></li>
+              <li><a href="#!">Experiencia<i class="material-icons left">sort</i></a></li>
               <li><a href="#!">Habilidades<i class="material-icons left">business_center</i></a></li>
               <li>
                 <a href="#!" class="dropdown-button" data-activates="ddMywork">Trabajo y más<i class="material-icons left">menu</i></a>
@@ -43,7 +45,7 @@
               </li>
               <li><a href="#!">Equipo<i class="material-icons left">supervisor_account</i></a></li>
               <li><a href="#!">Contacto<i class="material-icons left">comment</i></a></li>      
-              <li><a href="#!" class="btn waves-effect waves-light teal darken-1">Registrarse</a></li>    
+              <li><a href="#!" id="btn-registrarse" class="btn waves-effect waves-light teal darken-1">Registrarse</a></li>    
             </ul>
         </div>
       </nav>
@@ -58,37 +60,33 @@
               <a href="#!" class="btn-large waves-effect teal darken-1"><i class="material-icons left">play_circle_filled</i>¡Iniciar ya!</a>
             </div>
             <!--Elemento del slider-->
-            <div class="carousel-item white-text center-align" href="#four!">
-              <img src="img/owenslider.png" alt="Logo">
+            <div class="carousel-item white-text right-align" href="#three!">
+              <h1>Recorre y explora</h1>
+              <p>Accede a mi portafolio y hecha un vistazo a mis diseños y trabajos</p>
             </div>
             <!--Elemento del slider-->
             <div class="carousel-item white-text center-align" href="#one!">
-              <h1 class="h1">Bienvenido a mi sitio web</h1>
+              <h1>Bienvenido a mi sitio web</h1>
               <p>Aquí podrás saber más acerca de mi, qué es lo que hago y cómo lo hago</p>
             </div>
             <!--Elemento del slider-->
             <div class="carousel-item white-text left-align" href="#two!">
-              <h1 class="h1">Hablemos, hagamos negocios</h1>
+              <h1>Hablemos, hagamos negocios</h1>
               <p>¿Estas interesado en tener tu propia página web?, Contáctame y charlemos</p>
-            </div>
-            <!--Elemento del slider-->
-            <div class="carousel-item white-text right-align" href="#three!">
-              <h1 class="h1">Recorre y explora</h1>
-              <p>Accede a mi portafolio y hecha un vistazo a mis diseños y trabajos</p>
             </div>
           </div>
       </div>
     </div>
 
     <!--About me-->
-    <div id="S1" class="S1 row grey lighten-5 section">
+    <div id="S1" class="S1 row grey lighten-3 section">
       <div class="row col s12">
         <div class=" row container">
-          <h1 class="h1 center">Acerca de mi</h1>
+          <h1 class="center about">Acerca de mi</h1>
           <div class="col s12 m4">
-            <h2 class="h2 deep-blue">Fabian Alfonso Chi</h2>
-            <p class="link teal-text text-darken-3">Diseñador y desarrollador web</p>
-            <div class="col s9 center">
+            <h2>Fabian Alfonso Chi</h2>
+            <p class="link teal-text text-darken-2">Diseñador y desarrollador web</p>
+            <div class="col s9">
               <img src="img/pefil.jpg" alt="" class="responsive-img center">
             </div>      
           </div>
@@ -109,61 +107,236 @@
           <p>Código de trabajo</p>
           <div class="divider"></div>
           <br>
-          <div class="chip white-text bg-deep-blue">Creatividad<i class="material-icons right">done</i></div>
-          <div class="chip white-text teal darken-3">Innovación<i class="material-icons right">done</i></div>
-          <div class="chip white-text red darken-4">Responsabilidad<i class="material-icons right">done</i></div>
-          <div class="chip white-text bg-deep-blue">Compromiso<i class="material-icons right">done</i></div>
-          <div class="chip white-text teal darken-3">Trabajo conjunto<i class="material-icons right">done</i></div>
-          <div class="chip white-text red darken-4">Calidad<i class="material-icons right">done</i></div>
+          <div class="chip white-text teal darken-2">Creatividad<i class="material-icons right">done</i></div>
+          <div class="chip white-text teal darken-2">Innovación<i class="material-icons right">done</i></div>
+          <div class="chip white-text teal darken-2">Responsabilidad<i class="material-icons right">done</i></div>
+          <div class="chip white-text teal darken-2">Compromiso<i class="material-icons right">done</i></div>
+          <div class="chip white-text teal darken-2">Trabajo conjunto<i class="material-icons right">done</i></div>
+          <div class="chip white-text teal darken-2">Calidad<i class="material-icons right">done</i></div>
         </div>
       </div>
     </div>
-      <!--<div class="row col s12">
+
+    <!--Experiencia-->
+    <div id="S2" class="S2 row center section">
         <div class="container">
-          <div class="col s8">
-            <p>
-              Owen es mi imagen personal, podría decir que es un logo, pero en realidad eh adoptado al búho como mi emblema ya que es un animal nocturno y representa la sabiduría y el aprendizaje en muchas culturas. Uno de mis objetivos es ser CEO de mi propio grupo de desarrollo, ya sea por trabajo o para formar una comunidad entre desarrolladores, donde compartir conocimientos, tecnologías y hacer de owen nuestra mascota.
-            </p>
+          <h1 class="experience">Experiencia</h1>
+          <p>
+            Cada proyecto es único, desarrollarlo de manera correcta es tomar en cuenta al cliente en todo momento y regirse por sólidos valores y ética profesional; para cada cliente hago lo mejor que puedo hasta lograr estar ambos satisfechos. Los números son importantes en la programación, aquí podrás apreciar unos muy importantes.
+          </p>
+          <br/>
+          <br/>  
+          <div class="col s6 m3 blue-text text-darken-3">
+            <i class="large material-icons">computer</i>
+            <h3 id="proyectos">0</h3>
+            <h5 class="light center">Proyectos terminados</h5>
           </div>
-          <div class="col s4 right">
-            <img src="img/owen.png" alt="Owen" class="responsive-img">
+          <div class="col s6 m3 yellow-text text-darken-1">
+              <i class="large material-icons">access_time</i>
+              <h3 id="horas">0</h3>
+              <h5 class="light center">Horas programando</h5>
           </div>
-        </div>
-      </div>-->
+          <div class="col s6 m3 red-text text-darken-1">
+              <i class="large material-icons">code</i>
+              <h3 id="codigo">0</h3>
+              <h5 class="light center">Líneas de código</h5>
+          </div>
+          <div class="col s6 m3 green-text text-darken-1">
+              <i class="large material-icons">work</i>
+              <h3 id="años">0</h3>
+              <h5 class="light center">Años de experiencia</h5>
+          </div>
+        </div>    
+    </div>
 
-    <!--Estadisticas-->
-    <div id="S2" class="S2 row center white-text">
+    <!--Habilidades-->
+    <div id="S3" class="row grey lighten-3">
       <div class="container">
-        <h1 class="h1">Estadísticas</h1>
-        <p>
-          Cada proyecto es único, desarrollarlo de manera correcta es tomar en cuenta al cliente en todo momento y regirse por sólidos valores y ética profesional, para cada cliente hago lo mejor que puedo hasta estar ambos satisfechos. Los números son importantes en la programación, aquí podrás apreciar unos muy importantes.
-        </p>
+        <h1 class="center">Habilidades</h1>
+        <p>Cada lenguaje es distinto al igual que su aplicación y función dentro del software, la elección de qué tenologías se usarán para un proyecto depende de los requerimientos del mismo. He aquí el nivel de mis habilidades:</p>
         <br>
-        <br>  
-        <div class="col s12 m3">
-          <i class="large material-icons grey-text text-lighten-3">computer</i>
-          <h3 id="proyectos">0</h3>
-          <h5 class="light center">Proyectos terminados</h5>
+        <div class="col s6 m6">
+          <h5>HTML</h5>
+          <div class="meter">
+            <span style="width:90%" class="html"></span>
+          </div>
         </div>
-        <div class="col s12 m3">
-            <i class="large material-icons grey-text text-lighten-3">access_time</i>
-            <h3 id="horas">0</h3>
-            <h5 class="light center">Horas programando</h5>
+        <div class="col s6 m6">
+          <h5>CSS</h5>
+          <div class="meter">
+            <span style="width:80%" class="css"></span>
+          </div>
         </div>
-        <div class="col s12 m3">
-            <i class="large material-icons grey-text text-lighten-3">code</i>
-            <h3 id="codigo">0</h3>
-            <h5 class="light center">Líneas de código</h5>
+        <div class="col s6 m6">
+          <h5>Javascript</h5>
+          <div class="meter">
+            <span style="width:50%" class="js"></span>
+          </div>
         </div>
-        <div class="col s12 m3">
-            <i class="large material-icons grey-text text-lighten-3">work</i>
-            <h3 id="años">0</h3>
-            <h5 class="light center">Años de experiencia</h5>
+        <div class="col s6 m6">
+          <h5>JQuery</h5>
+          <div class="meter">
+            <span style="width:20%" class="jq"></span>
+          </div>
+        </div>
+        <div class="col s6 m6">
+          <h5>SQL</h5>
+          <div class="meter">
+            <span style="width:60%" class="sql"></span>
+          </div>
+        </div>
+        <div class="col s6 m6">
+          <h5>Visual Basic</h5>
+          <div class="meter">
+            <span style="width:70%" class="vb"></span>
+          </div>
+        </div>
+        <div class="col s6 m6">
+          <h5>C#</h5>
+          <div class="meter">
+            <span style="width:30%" class="cs"></span>
+          </div>
+        </div>
+        <div class="col s6 m6">
+          <h5>Wordpress</h5>
+          <div class="meter">
+            <span style="width:70%" class="wp"></span>
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+
+    <!--Work---->
+    <div id="S4" class="row">
+      <div class="container">
+        <h1 class="center">Mi trabajo</h1>
+        <br/>
+        <div class="col s12 m12">
+          <ul class="tabs">
+          <li class="tab col s6 m2"><a href="#prj1">Ega</a></li>
+          <li class="tab col s6 m2"><a href="#prj2">Ats</a></li>
+          <li class="tab col s6 m2"><a href="#prj3">Docs Online</a></li>
+          <li class="tab col s6 m2"><a href="#prj4">Radio Utcam</a></li>
+          <li class="tab col s6 m2"><a href="#prj5">Search House</a></li>
+          <li class="tab col s6 m2"><a href="#prj6">Serac</a></li>
+        </ul>
+        </div>
+        <div id="prj1" class="center col s12 m12">
+          <div class="col s12 m4">
+            <br>
+            <img src="img/p1.png" alt="" class="responsive-img">
+          </div>
+          <div class="prj col s12 m8">
+            <h3>EGA</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, rem consectetur cumque at ipsam, ducimus aspernatur enim quo, corporis nemo officiis commodi. Distinctio accusamus ipsam dolores fuga sapiente blanditiis maxime.</p>
+            <br>
+            <div class="col s12 m12">
+                <a href="" class="btn red darken-2"><i class="material-icons left">play_arrow</i>Demo</a>
+                <a href="" class="btn red darken-2"><i class="material-icons left">add</i>Portafolio</a>
+            </div>
+          </div>  
+        </div>
+        <div id="prj2" class="center col s12 m12">
+          <div class="col s12 m4">
+            <br>
+            <img src="img/p2.jpg" alt="" class="responsive-img">
+          </div>
+          <div class="prj col s12 m8">
+            <h3>ATS</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, rem consectetur cumque at ipsam, ducimus aspernatur enim quo, corporis nemo officiis commodi. Distinctio accusamus ipsam dolores fuga sapiente blanditiis maxime.</p>
+            <br>
+            <div class="col s12 m12">
+                <a href="" class="btn red darken-2"><i class="material-icons left">play_arrow</i>Demo</a>
+                <a href="" class="btn red darken-2"><i class="material-icons left">add</i>Portafolio</a>
+            </div>
+          </div>  
+        </div>
+        <div id="prj3" class="center col s12 m12">
+          <div class="col s12 m4">
+            <br>
+            <img src="img/p3.png" alt="" class="responsive-img">
+          </div>
+          <div class="prj col s12 m8">
+            <h3>Documentos Online</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, rem consectetur cumque at ipsam, ducimus aspernatur enim quo, corporis nemo officiis commodi. Distinctio accusamus ipsam dolores fuga sapiente blanditiis maxime.</p>
+            <br>
+            <div class="col s12 m12">
+                <a href="" class="btn red darken-2"><i class="material-icons left">play_arrow</i>Demo</a>
+                <a href="" class="btn red darken-2"><i class="material-icons left">add</i>Portafolio</a>
+            </div>
+          </div>  
+        </div>
+        <div id="prj4" class="center col s12 m12">
+          <div class="col s12 m4">
+            <br>
+            <img src="img/p4.jpg" alt="" class="responsive-img">
+          </div>
+          <div class="prj col s12 m8">
+            <h3>Radio UTCAM</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, rem consectetur cumque at ipsam, ducimus aspernatur enim quo, corporis nemo officiis commodi. Distinctio accusamus ipsam dolores fuga sapiente blanditiis maxime.</p>
+            <br>
+            <div class="col s12 m12">
+                <a href="" class="btn red darken-2"><i class="material-icons left">play_arrow</i>Demo</a>
+                <a href="" class="btn red darken-2"><i class="material-icons left">add</i>Portafolio</a>
+            </div>
+          </div>  
+        </div>
+        <div id="prj5" class="center col s12 m12">
+          <div class="col s12 m4">
+            <br>
+            <img src="img/p5.jpg" alt="" class="responsive-img">
+          </div>
+          <div class="prj col s12 m8">
+            <h3>Search house</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, rem consectetur cumque at ipsam, ducimus aspernatur enim quo, corporis nemo officiis commodi. Distinctio accusamus ipsam dolores fuga sapiente blanditiis maxime.</p>
+            <br>
+            <div class="col s12 m12">
+                <a href="" class="btn red darken-2"><i class="material-icons left">play_arrow</i>Demo</a>
+                <a href="" class="btn red darken-2"><i class="material-icons left">add</i>Portafolio</a>
+            </div>
+          </div>  
+        </div>
+        <div id="prj6" class="center col s12 m12">
+          <div class="col s12 m4">
+            <br>
+            <img src="img/p6.png" alt="" class="responsive-img">
+          </div>
+          <div class="prj col s12 m8">
+            <h3>SERAC</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, rem consectetur cumque at ipsam, ducimus aspernatur enim quo, corporis nemo officiis commodi. Distinctio accusamus ipsam dolores fuga sapiente blanditiis maxime.</p>
+            <br>
+            <div class="col s12 m12">
+                <a href="" class="btn red darken-2"><i class="material-icons left">play_arrow</i>Demo</a>
+                <a href="" class="btn red darken-2"><i class="material-icons left">add</i>Portafolio</a>
+            </div>
+          </div>  
         </div>
       </div>
     </div>
 
 
+    <div id="S5" class="S5 row grey lighten-3">
+      <div class="container">
+        <div class="col s12 m6 center">
+          <h3>Mi tarjeta</h3>
+          <p>Esta es mi tarjeta profesional, escanea el código QR con tu teléfono para guardar mis datos o haz clic en el botón de abajo para ir a mi tarjeta en línea.</p>
+          <br>
+          <a href="#!" class="btn waves-effect marine"><i class="material-icons left">contact_phone</i>Tarjeta en línea</a>
+        </div>
+        <div class="col s12 m6">
+          <img src="img/Fchi_card.png" alt="" class="responsive-img">
+        </div>
+      </div>
+    </div>
+
+
+    <!---Floating button-->
+    <div class="fixed-action-btn" style="bottom:45px;right:25px;">
+      <a href="#fullpage" class="btn-floating btn-large red darken-2">
+        <i class="material-icons large white-text">navigation</i>
+      </a>
+    </div>
 
   </div>
 </body>
@@ -179,7 +352,7 @@
 <!--Importing js local javascript-->
 <script type="text/javascript" src="js/fabianchi.js"></script>
 <!--Importing fullpage.js Local-->
-<!--<script type="text/javascript" src="js/jquery.fullPage.js"></script>-->
+<script type="text/javascript" src="js/jquery.fullPage.js"></script>
 <!--Importing materialize.css js CND-->
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>-->
 </html>
